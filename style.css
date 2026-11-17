@@ -1,0 +1,120 @@
+      :root {
+        --bg-void: #050811;
+        --bg-obsidian: #0b0f19;
+        --border-glass: rgba(255, 255, 255, 0.08);
+        --border-glow: rgba(0, 240, 255, 0.35);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: var(--bg-void);
+        color: #e2e8f0;
+        font-family: "Inter", system-ui, sans-serif;
+        overflow-x: hidden;
+      }
+
+      /* Cyber Canvas Background */
+      #heroCanvas {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      /* Glassmorphic Panel & 3D Tilt Bento Hover Effect */
+      .glass-panel {
+        background: linear-gradient(
+          135deg,
+          rgba(11, 15, 25, 0.88),
+          rgba(5, 8, 17, 0.95)
+        );
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border: 1px solid var(--border-glass);
+        box-shadow:
+          0 16px 40px -12px rgba(0, 0, 0, 0.8),
+          inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        transition:
+          border-color 0.3s ease,
+          transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+          box-shadow 0.3s ease;
+      }
+
+      .glass-panel:hover {
+        border-color: rgba(0, 240, 255, 0.45);
+        transform: translateY(-3px);
+        box-shadow:
+          0 24px 54px -12px rgba(0, 240, 255, 0.22),
+          0 0 25px rgba(0, 240, 255, 0.12),
+          inset 0 1px 0 rgba(0, 240, 255, 0.2);
+      }
+
+      /* Floating Glass Top Bar */
+      .floating-nav {
+        background: rgba(5, 8, 17, 0.82);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050811;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1e293b;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #334155;
+      }
+
+      /* Interactive Spotlight Utilities */
+      .spotlight-card {
+        position: relative;
+        overflow: hidden;
+      }
+      .spotlight-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+          800px circle at var(--mouse-x, 0) var(--mouse-y, 0),
+          rgba(0, 240, 255, 0.08),
+          transparent 45%
+        );
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      /* Enhanced 3D Neon Glow Enhancements */
+      .neon-glow-cyan {
+        box-shadow:
+          0 0 25px -5px rgba(0, 240, 255, 0.25),
+          inset 0 0 15px rgba(0, 240, 255, 0.1);
+      }
+      .neon-glow-violet {
+        box-shadow:
+          0 0 25px -5px rgba(139, 92, 246, 0.25),
+          inset 0 0 15px rgba(139, 92, 246, 0.1);
+      }
+      .neon-glow-amber {
+        box-shadow:
+          0 0 25px -5px rgba(245, 158, 11, 0.25),
+          inset 0 0 15px rgba(245, 158, 11, 0.1);
+      }
+      .neon-glow-rose {
+        box-shadow:
+          0 0 25px -5px rgba(244, 63, 94, 0.25),
+          inset 0 0 15px rgba(244, 63, 94, 0.1);
+      }
