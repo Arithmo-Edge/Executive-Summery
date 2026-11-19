@@ -108,23 +108,139 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Arithmo-Edge",
-        "alternateName": "Olympiad Edge",
-        "url": "https://github.com/Arithmo-Edge",
-        "description": "The world's first real-time ELO-rated competitive mathematics and Olympiad mega-ecosystem featuring 14 federated portals, 5 core Olympiad arenas, 42 specialized AI engines, Proof-Based Grading, Find the Flaw, and QPRT-4 resilience.",
-        "founder": {
-          "@type": "Person",
-          "name": "Rayaan Tasnim",
-          "jobTitle": "Founder & Chief System Architect"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Arithmo-Edge",
-          "slogan": "Powered by Olympiad Edge",
-          "logo": "favicon.jpg",
-          "sameAs": ["https://github.com"]
-        }
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization",
+            "name": "Arithmo-Edge",
+            "alternateName": ["Olympiad Edge", "Arithmo Edge v1.2 Core"],
+            "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/",
+            "logo": "https://arithmo-edge.github.io/Executive-Summary/favicon.jpg",
+            "email": "rayaantasnim@gmail.com",
+            "areaServed": "Worldwide",
+            "description": "The World's First Real-Time ELO-Rated Competitive Mathematics & Olympiad Mega-Ecosystem, Powered by Olympiad Edge. Unified 14-portal competitive mathematics infrastructure combining real-time ELO telemetry, proof-based Olympiad grading, a 42-engine AI core, Quad-Phase Resilience Theory (QPRT-4), and zero-cost ($0/month) federated edge hosting synchronized via Arithmo-Core-SDK (engine.js).",
+            "founder": [
+              {
+                "@type": "Person",
+                "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html#rayaan-tasnim",
+                "name": "Rayaan Tasnim",
+                "jobTitle": "Founder & System Architect",
+                "description": "Core Ledger #01; Permanently Reserved Title: Core System Architect. Founder and Core System Architect of Arithmo-Edge and PrimeFactor.app under Olympiad Edge; master architect behind the 14-site federated cloud ecosystem, Arithmo-Core-SDK (engine.js), Quad-Phase Resilience Theory (QPRT-4), Firebase Hot DB, and the 42-engine AI cognitive infrastructure.",
+                "email": "rayaantasnim@gmail.com",
+                "sameAs": [
+                  "https://github.com",
+                  "https://github.com/Arithmo-Edge"
+                ]
+              },
+              {
+                "@type": "Person",
+                "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html#jalees-habib",
+                "name": "Jalees Habib",
+                "jobTitle": "Co-Founder & Math Engineer",
+                "description": "Core Ledger #02; Permanently Reserved Title: Chief Mathematical Architect. Co-Founder and Chief Mathematical Architect of Arithmo-Edge; lead architectural authority for Olympiad problem synthesis, the Co-Founders' 5x4 Golden Question Bank Vault (.json), proof-based grading protocols, and deterministic anti-LLM mathematical verification standards.",
+                "sameAs": [
+                  "https://www.youtube.com/@jaleeshabib",
+                  "https://www.chess.com/member/jaiees"
+                ]
+              }
+            ],
+            "sameAs": [
+              "https://github.com",
+              "https://github.com/Arithmo-Edge",
+              "https://www.youtube.com/@jaleeshabib",
+              "https://www.chess.com/member/jaiees",
+              "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#website",
+            "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/",
+            "name": "Arithmo-Edge",
+            "alternateName": "Olympiad Edge",
+            "description": "The World's First Real-Time ELO-Rated Competitive Mathematics & Olympiad Mega-Ecosystem, Powered by Olympiad Edge.",
+            "inLanguage": "en-US",
+            "publisher": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://arithmo-edge.github.io/Introductory-Landing-Page/?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://arithmo-edge.github.io/Executive-Summary/#webpage",
+            "url": "https://arithmo-edge.github.io/Executive-Summary/",
+            "name": "Arithmo-Edge | Executive Protocol Dossier (v1.2 Core)",
+            "description": "Executive Protocol Dossier for Arithmo-Edge powered by Olympiad Edge: Pioneer Contributors, 14-Site Federated Architecture (1 Core + 13 Subsites), 5 Arenas & Average-Based 60-Tier ELO Matrix, Contests/Grading/Flaws, 42 AI Engines & QPRT-4, Business Model & Horizon, and HQ Governance & Patrons.",
+            "inLanguage": "en-US",
+            "isPartOf": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#website"
+            },
+            "about": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "publisher": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            },
+            "mainEntity": {
+              "@id": "https://arithmo-edge.github.io/Executive-Summary/#executive-dossier"
+            },
+            "breadcrumb": {
+              "@id": "https://arithmo-edge.github.io/Executive-Summary/#breadcrumb"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://arithmo-edge.github.io/Executive-Summary/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://arithmo-edge.github.io/Introductory-Landing-Page/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Executive Protocol Dossier",
+                "item": "https://arithmo-edge.github.io/Executive-Summary/"
+              }
+            ]
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://arithmo-edge.github.io/Executive-Summary/#executive-dossier",
+            "name": "Arithmo-Edge Executive Protocol Dossier (v1.2 Core)",
+            "applicationCategory": "EducationalApplication",
+            "operatingSystem": "Web",
+            "softwareVersion": "v1.2 Core",
+            "url": "https://arithmo-edge.github.io/Executive-Summary/",
+            "provider": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "description": "Executive overview of Arithmo-Edge's 14-portal competitive mathematics infrastructure (1 Core + 13 Subsites), 5 competitive Olympiad arenas with 60 average-based rank tiers (Rank Rating = (General ELO + Expert ELO) / 2 across 10 Core ELOs from 0-499 up to 3000+), zero-fragmentation hidden Olympiad topic tags during live rated contests (#Modular-Arithmetic, #Vieta-Jumping, #Inversion, #Pigeonhole), proof-based grading & Find the Flaw auditing, 42 AI engines (Gemini + Qwen + SymPy), Quad-Phase Resilience Theory (QPRT-4 Zero-FP Integrity Shield), $0/month federated edge stack (GitHub Pages + GitHub Actions, 1 Firebase Project Auth + Cloud Firestore Hot DB, and 24-Hour Automated Private GitHub Zero-PII JSONL Data Lake), frictionless unrated guest access vs. custom @handle via Gmail SSO, business model & horizon, and HQ governance & patrons.",
+            "featureList": [
+              "01. Executive Overview & Hero: 14 Federated Portals (1 Core + 13 Subsites), 5 Arenas & 60 Rank Tiers, 42 AI Engines (Gemini + Qwen + SymPy), QPRT-4 Zero-FP Integrity Shield, and $0/Month Cloud Deployment Stack (GitHub Pages + Firebase)",
+              "02. Pioneer Contributors (Founders): Rayaan Tasnim (Core Ledger #01, Permanently Reserved Title: Core System Architect) and Jalees Habib (Core Ledger #02, Permanently Reserved Title: Chief Mathematical Architect)",
+              "03. 14-Site Federated Architecture & Identity: Synchronized via Arithmo-Core-SDK (engine.js) on GitHub Pages + GitHub Actions, 1 Firebase Project (Auth + Cloud Firestore Hot DB), and a 24-Hour Automated Private GitHub Zero-PII JSONL Data Lake; supports frictionless unrated guest entry (0 ELO change, Find the Flaw, anonymized telemetry) and custom @handle registration via Gmail SSO",
+              "04. 5 Arenas & Average-Based 60-Tier ELO Matrix: 10 Core ELOs (General ELO and Expert ELO per arena) across 5 Olympiad arenas with 12 tiers each (60 rank tiers total, 0-499 to 3000+) computed via Rank Rating = (General ELO + Expert ELO) / 2, with Zero-Fragmentation Olympiad Tags (#Modular-Arithmetic, #Vieta-Jumping, #Inversion, #Pigeonhole) hidden during live rated contests",
+              "05. Contests, Grading & Flaws: Live ELO-rated contests, proof-based Olympiad grading, and post-contest Find the Flaw proof auditing",
+              "06. 42 AI Engines & QPRT-4: 42-engine AI cognitive infrastructure (Gemini + Qwen + SymPy) paired with Quad-Phase Resilience Theory (QPRT-4) Zero-FP Integrity Shield",
+              "07. Business Model & Horizon: Sustainable monetization without compromising meritocratic rating integrity",
+              "08. HQ Governance & Patrons: Meritocratic Headquarters governance, stewardship, and Wall of Patrons"
+            ]
+          }
+        ]
       }
     </script>
     <!-- ======================================================================= -->
